@@ -7,6 +7,7 @@ setopt nosharehistory
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/homebrew/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,11 +101,7 @@ setopt HIST_IGNORE_SPACE
 export EDITOR=vim
 
 # Set vi style bindings in shell
-bindkey -v
 bindkey '^R' history-incremental-search-backward
-# ctrl j and k to go up and down in history
-bindkey -M viins '^J' history-incremental-search-forward
-bindkey -M viins '^K' history-incremental-search-backward
 
 # Use colors
 export CLICOLOR=1
@@ -130,6 +127,7 @@ pathadd $HOME/.rvm/bin
 pathadd $HOME/.local/bin
 pathadd /usr/local/sbin
 pathadd $HOME/node_modules/.bin
+pathadd $HOME/homebrew/bin front=true
 
 # Disable auto renaming terminal
 PROMPT_COMMAND=""
@@ -168,27 +166,6 @@ export LC_CTYPE=en_US.UTF-8
 # Terminal grep colors support
 #export GREP_OPTIONS="--color=always"; #deprecated
 alias grep='grep --color'
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/r631269/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/r631269/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/r631269/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/r631269/google-cloud-sdk/completion.zsh.inc'; fi
-
-# set up pyenv
-eval "$(pyenv init -)"
-
-# Shortcuts for typing
-export ART=artifactory.healthsparq.com
-export REG=docker-registry.healthsparq.com
-export DEV=445930290302
-export UAT=304408629837
-export PRD=629290951501
-export TOOLSPRD=774580802320
-export TOOLSDEV=551078432832
-export MGMT2=803571735847
-export ANALYTICS=880065222602
-
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
