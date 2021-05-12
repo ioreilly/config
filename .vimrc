@@ -126,20 +126,16 @@
   " Close current tab
   nmap <leader>q :tabclose<CR>
   " Alt-q, close tab
-  nmap œ :tabclose<CR>
-  "nmap q :tabclose<CR>
+  nmap q :tabclose<CR>
   " Alt-j, navigate to last tab
-  map ∆ :tabl<CR>
-  "map j :tabl<CR>
+  map j :tabl<CR>
   " Alt-k, navigate to first tab
   map ˚ :tabfir<CR>
   "map k :tabfir<CR>
   " Alt-h, navigate to previous tab
-  map ˙ :tabp<CR>
-  "map h :tabp<CR>
+  map h :tabp<CR>
   " Alt-l, navigate to next tab
-  map ¬ :tabn<CR>
-  "map l :tabn<CR>
+  map l :tabn<CR>
   " Alt-c, create new tab
   map ç :tabnew<CR>
   "map c :tabnew<CR>
