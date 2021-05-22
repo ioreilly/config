@@ -18,9 +18,9 @@ Note: back up any existing configuration files before you overwrite them. The or
 3. `cp .bash_aliases.git $HOME`
 4. `cp .zshrc $HOME`
 5. `brew install zsh` 
-6. sh -c "$curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+6. sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 7. Download and install the [MesloLGS NF font family](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
-8. `git clone --depth 1 https://github.com/romkatv/powerlevel10k.git` # dowoad the [powerlevel10k theme](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
+8. git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 9. `p10k configure`
 10. `brew install vim`
 11. `brew install tmux`
